@@ -8,8 +8,3 @@ function* generator(a) {
   }
 }
 
-let gen = generator(1);
-for (let i = 0; i < 5; i++) {
-  // Generating Next Number
-  console.log(gen.next().value);
-}
