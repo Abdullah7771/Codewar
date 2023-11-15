@@ -1,0 +1,15 @@
+function* generator(a) {
+  let b = 1;
+
+  while (true) {
+    var c = a * b;
+    yield `${a} x ${b} = ${c}`;
+    b++;
+  }
+}
+
+let gen = generator(1);
+for (let i = 0; i < 5; i++) {
+  // Generating Next Number
+  console.log(gen.next().value);
+}
